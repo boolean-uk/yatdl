@@ -8,9 +8,8 @@ class TodoList extends Component {
   }
 
   addTodo = () => {
-    const newTodos = this.state.todos
-    newTodos.push(this.state.text)
-    this.setState({todos: newTodos})
+    this.state.todos.push(this.state.text)
+    this.setState({todos: this.state.todos})
   }
 
   handleChange = (event) => {
